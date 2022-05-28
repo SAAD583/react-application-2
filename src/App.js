@@ -5,9 +5,6 @@ import ToDoList from "./Components/ToDoList"
 function App() {
   return (
     <>
-    <h1>
-      hello
-    </h1>
       <ToDoList/>
     </>
   );

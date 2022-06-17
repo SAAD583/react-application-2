@@ -8,9 +8,11 @@ export default function() {
     const [editId, setEditId] = React.useState(null)
     const [isEditing, setIsEditing] = React.useState(false)
     const [noValue, setNoValue] = React.useState(false)
+    const todolist = React.useRef()
 
     function handleSubmit(e) {
         e.preventDefault()
+        console.log(todolist.current.clientHeight);
         
         if (!isEditing) {
             if (value == "") {
@@ -48,7 +50,7 @@ export default function() {
     }
 
     return (
-        <div className="todolist-container">
+        <div ref={todolist} className="todolist-container">
             <h2>
                 To Do List
             </h2>

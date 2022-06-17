@@ -42,13 +42,16 @@ body {
     border-radius: 10px;
     text-align: center;
     width: 500px;
+}
+
+.todolist-container h2 {
     font-weight: bold;
 }
 
 .todolist-container input {
     color: #f1f1f1;
     border: none;
-    margin: 15px 0;
+    margin: 20px 0;
     width: 92%;
     font-size: 14px;
     outline: none;
